@@ -1,0 +1,350 @@
+{% extends "cliente/base.html" %}
+
+{% load static %}
+{% block title %} Game Clear - Inicio {% endblock %}
+
+{% block div %}
+  Iniciar Sesión
+{% endblock %}
+
+{% block div2 %}
+  Iniciar Sesión
+{% endblock %}
+
+{% block head %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/estructura.css' %}">
+{% endblock %}
+
+{% block body %}
+  id="imagen"
+{% endblock %}
+
+{% block content %}
+  {% load static %}
+  <!-- Inicio slider -->
+  <div class="slider">
+      <ul class="slides">
+          <li>
+              <img class="responsive-img" src="{% static 'imagen/Imagenes/cod_bo2.jpg' %}" alt="juego"> <!-- random image -->
+              <div class="caption center-align">
+                  <h3>Las mejores ofertas</h3>
+                  <h5 class="light grey-text text-lighten-3">
+                      Encuentra hasta un 50% de descuento en los titulos más recientes
+                  </h5>
+              </div>
+          </li>
+          <li>
+              <img class="responsive-img" src="{% static 'imagen/Imagenes/cod_bo2.jpg' %}" alt="juego"> <!-- random image -->
+              <div class="caption left-align">
+                  <h3>Juegos destacados en septiembre</h3>
+                  <h5 class="light grey-text text-lighten-3">
+                      Revisa aquí los juegos más comprados este mes y pide el que más te guste
+                  </h5>
+              </div>
+          </li>
+          <li>
+              <img class="responsive-img" src="{% static 'imagen/Imagenes/cod_bo2.jpg' %}" alt="juego"> <!-- random image -->
+              <div class="caption right-align">
+                  <h3>Facilidad en el pago</h3>
+                  <h5 class="light grey-text text-lighten-3">
+                      Tenemos muchas facilidades al momento de que realizes una compra,
+                      revisalas y usa la que mejor te acomode
+                  </h5>
+              </div>
+          </li>
+          <li>
+              <img class="responsive-img" src="{% static 'imagen/Imagenes/cod_bo2.jpg' %}" alt="juego"> <!-- random image -->
+              <div class="caption center-align">
+                  <h3>Entrega inmediata</h3>
+                  <h5 class="light grey-text text-lighten-3">
+                      Tenemos distribuidores de confianza, todos regulados constantemente para que te
+                      entreguen tus productos lo antes posible, así nunca pares de jugar
+                  </h5>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <!-- Fin slider -->
+
+  <a class="waves-light btn-small" onclick="oscuridad();"><i class="material-icons left">brightness_medium</i>Modo oscuro</a>
+
+  <!-- Inicio carrusel -->
+  <div class="row center">
+      <div class="carousel col s12">
+
+          <div class="carousel-item">
+              <div class="card ">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator" alt="juego" src="{% static 'imagen/Imagenes/cod_bo2.jpg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Call of duty: Black Ops II</span>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Call of duty: Black Ops II<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Call of Duty: Black Ops II es el segundo juego de la saga Call of Duty en presentar la futura tecnología de la guerra,
+                          y el primero en presentar historias de ramificación impulsados por elección del jugador,
+                          así como la selección de armas antes de comenzar las misiones del modo historia.
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card ">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/hitman.webp' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Hitman</span>
+                      <br>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Hitman<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Hitman es una serie de videojuegos de sigilo disponible en la mayoría de los formatos modernos.
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/shadow.png' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Shadow of the colossus</span>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Shadow of the colossus<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          El juego trata de un joven, conocido únicamente como Wander (del inglés wanderer, 'alguien que deambula'),
+                          que debe viajar a caballo a través de un vasto territorio y derrotar a 16 gigantes,
+                          conocidos colectivamente como «Colossi» («colosos» en español) para devolver la vida a una joven.
+                      </p>
+                    </div>
+                  </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/crisi.jpg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Dino Crisis 2</span>
+                      <br>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Dino Crisis 2<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Dino Crisis 2 es un videojuego de survival horror, aventura y acción, secuela del Dino Crisis.
+                          El juego fue desarrollado por Capcom y lanzado para PlayStation el 13 de septiembre del 2000
+                          y el 20 de agosto de 2002 para Microsoft Windows
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image  waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/monster.jpeg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Monster Hunter World</span>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Monster Hunter World<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Monster Hunter: World es un videojuego de rol y acción, ambientado en un entorno de mundo abierto,
+                          y jugado desde una perspectiva en tercera persona.
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/redi2.jpeg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Resident Evil 2 Remake</span>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Resident Evil 2 Remake<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Resident Evil 2 ofrece una nueva visión de la clásica saga de terror de supervivencia con imágenes
+                          increíblemente realistas, audio impactante, una nueva cámara sobre el hombro y
+                          controles modernizados en la parte superior de los modos de juego del juego original.
+                      </p>
+                    </div>
+                  </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/residen3.webp' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Resident Evil 3 Remake</span>
+                      <p>
+                          <a href="" class=" waves-light btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Resident Evil 3 Remake<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Resident Evil 3 Remake es un videojuego perteneciente al género de acción y aventura y horror de supervivencia,
+                          desarrollado y publicado por la empresa Capcom, se trata un nueva versión del videojuego homónimo de 1999
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/tomo.jpg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Rise of The Tomb Raider</span>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Rise of The Tomb Raider<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          Rise of The Tomb Raider es un videojuego de acción-aventura desarrollado por Crystal Dynamics.
+                          Es la secuela directa de Tomb Raider (2013), triplicando el tamaño total de sus escenarios​
+                          y narra la historia de cómo Lara Croft
+                          sigue forjándose y madurando hasta convertirse en la cazatesoros que todos conocemos.
+                      </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="carousel-item ">
+              <div class="card">
+                  <div class="card-image waves-block waves-light">
+                      <img class="activator responsive-img" alt="juego" src="{% static 'imagen/Imagenes/godowar.jpg' %}">
+                  </div>
+                  <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">God of War</span>
+                      <br>
+                      <p>
+                          <a href="" class="btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                      </p>
+                  </div>
+
+                  <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">God of War<i class="material-icons right">close</i></span>
+                      <p style="text-align: justify;">
+                          God of War (literalmente Dios de la guerra) es un videojuego de acción-aventura desarrollado por SCE
+                          Santa Monica Studio y distribuido por Sony Computer Entertainment en 2005 para PlayStation 2.
+                          El éxito de God of War ha llevado al desarrollo de seis juegos adicionales como parte de la serie.
+                      </p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <h4 id="titulo">Top de la semana</h4>
+          </div>
+
+      </div>
+
+  </div>
+  <!-- Fin carrusel -->
+
+  <div class="row center">
+      <h4 id="titulo2">Clásicos</h4>
+      <div class="col s12">
+
+        {% for prod in lista_prod %}
+        <div class="col s12 m6 l4">
+            <div class="card ">
+            <div class="card-image waves-block waves-light">
+
+                <script type="text/javascript">
+                function Acorta(url) {
+                    return url.substring(10);
+                }
+                window.onload = document.write('<img class="tamaño-muestreo__img responsive-img activator" style="height: 300px !important;" id="img-prod" src="'+ Acorta('{{ prod.foto.url }}') +'">')
+                </script>
+            </div>
+
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{ prod.titulo }}</span>
+                <h5>${{ prod.precio }}</h5>
+                <p>
+                    <a href="" class=" waves-light btn-small"><i class="material-icons left">shopping_cart</i>Añadir al carro</a>
+                </p>
+            </div>
+
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{ prod.titulo }}<i class="material-icons right">close</i></span>
+                <p style="text-align: justify;">{{ prod.descripcion }}</p>
+                <p style="text-align: left;">Multiplayer : {{ prod.multiplayer }} <br>
+                   Categoria: {{ prod.categoria }} <br>
+                   codigo: {{ prod.codigo }}</p>
+            </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var options ={dist: 0, padding: 20, numVisible: 8};
+          var elems = document.querySelectorAll('.carousel');
+          var instances = M.Carousel.init(elems, options);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+          var options = {}
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, options);
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+          var options = {}
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems, options);
+      });
+
+      var instance = M.Carousel.init({
+          fullWidth: true,
+          indicators: true
+      });
+  </script>
+{% endblock %}
